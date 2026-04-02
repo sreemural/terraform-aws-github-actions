@@ -6,3 +6,13 @@ jobs:
         steps:
             - name: Hello world action step
               run: echo "Hello world!"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Test action step
+              run: echo "Running tests..."
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy the app
+              run: echo "App deployed successfully!"
