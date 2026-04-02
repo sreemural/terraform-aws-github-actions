@@ -1,1 +1,0 @@
-# terraform-aws-github-actions
