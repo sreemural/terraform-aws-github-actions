@@ -3,21 +3,14 @@ on:
     push:
         branches:
             - main
+            - feature
+            - develop
+    pull_request:
+        branches:
+            - main
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - name: Hello world action step
               run: echo "Hello world!"
-    test:
-        runs-on: ubuntu-latest
-        needs: build
-        steps:
-            - name: Test action step
-              run: echo "Running tests..."
-    deploy:
-        runs-on: ubuntu-latest
-        needs: test
-        steps:
-            - name: Deploy the app
-              run: echo "App deployed successfully!"
