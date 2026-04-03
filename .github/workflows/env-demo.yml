@@ -12,4 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Connecting to env
+        env:
+         APP_ENV: "test"
         run: echo "App is connecting to $APP_ENV"
