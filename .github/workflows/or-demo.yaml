@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Run this  step if 
-              if: github.actor == 'sreemural'
+              if: github.actor == 'sreemural' || github.actor == 'main'
               run: echo "Running for main branch"
 
     
