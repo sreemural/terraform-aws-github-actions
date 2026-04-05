@@ -1,0 +1,16 @@
+name: Or demo
+on:
+    push:
+        branches:
+            - main
+            - develop
+jobs:
+    if-demo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run this  step if 
+              if: github.actor == 'sreemural'
+              run: echo "Running for main branch"
+
+    
+
